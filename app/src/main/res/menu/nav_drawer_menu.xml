@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group  android:checkableBehavior="single"
+
+        >
+
+        <item
+            android:id="@+id/loginBtn"
+            android:title="Login"
+           />
+        <item
+            android:id="@+id/homeBtn"
+            android:title="Home"
+          />
+        <item
+            android:id="@+id/nav_categories"
+            android:title="My trips"
+
+          />
+        <item
+            android:id="@+id/nav_missing_place"
+            android:title="Favorites"
+           />
+        <item
+            android:id="@+id/nav_missing_places"
+            android:title="+Create New Trips"
+            />
+
+    </group>
+
+    <item android:title="Help">
+        <menu>
+            <group  android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="FAQ"
+                   />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Give Feedback"/>
+
+
+
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>
+
+

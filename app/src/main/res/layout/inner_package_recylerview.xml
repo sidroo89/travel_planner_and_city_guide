@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    android:layout_margin="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_marginBottom="8dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/featured_image"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/puribeach_3"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_marginTop="8dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BEACH"
+            android:textSize="13sp"
+            android:fontFamily="@font/muli_bold"
+            android:maxLines="2"
+            android:visibility="visible"
+            android:ellipsize="end"
+            android:textColor="#ff696969"
+
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puri Beach"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/josefin_sans_bold_italic"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="8dp"
+            >
+            <RatingBar
+                android:id="@+id/featured_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="3.5"
+                android:numStars="5"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:progressTint="#DDD050"
+                android:secondaryProgressTint="#DDD050"
+                android:progressBackgroundTint="#FF4F4F4F"
+                android:isIndicator="true"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/restaurantRating"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_bold"
+                android:gravity="center"
+                android:text="4.1"
+                android:textColor="#FF4F4F4F"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

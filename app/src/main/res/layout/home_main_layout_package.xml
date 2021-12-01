@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+
+    android:layout_marginTop="32dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_auto_image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:scaleType="centerCrop"
+
+
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/nilgiri">
+
+        </ImageView>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="#33000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical"
+            android:background="#00000000"
+
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+
+
+
+
+                android:fontFamily="@font/muli_extrabold"
+
+                android:padding="4dp"
+                android:text="Nilgiri"
+                android:textColor="#FFF"
+                android:textSize="26sp"
+                android:textStyle="italic"
+                android:layout_gravity="center_horizontal"
+
+
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#8cFFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_auto_image_slider"
+            app:layout_constraintStart_toStartOf="@+id/iv_auto_image_slider"
+            app:layout_constraintEnd_toEndOf="@id/iv_auto_image_slider"
+            android:orientation="horizontal"
+
+            >
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginStart="16dp"
+
+
+
+                android:fontFamily="@font/josefin_sans_semibold_italic"
+
+                android:text="Best For :"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:padding="4dp"
+
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:background="#00000000"
+
+
+                android:ellipsize="end"
+                android:fontFamily="@font/josefin_sans_semibold_italic"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="Zoo , Waterfall, NationalPark"
+                android:textColor="#1C1C1C"
+                android:textSize="16sp"
+                android:textStyle="italic"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

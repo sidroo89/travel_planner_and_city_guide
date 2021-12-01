@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/loginPage">
+
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.travelplannerandcityguide.ui.fragments.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_loginPage_to_loginDataInsert"
+            app:destination="@id/loginDataInsert" />
+        <action
+            android:id="@+id/action_loginPage_to_signUpPage"
+            app:destination="@id/signUpPage"
+            app:popUpTo="@id/signUpPage"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginDataInsert"
+        android:name="com.example.travelplannerandcityguide.ui.fragments.LoginDataInsert"
+        android:label="fragment_login_data_insert"
+        tools:layout="@layout/fragment_login_data_insert" />
+    <fragment
+        android:id="@+id/signUpPage"
+        android:name="com.example.travelplannerandcityguide.ui.fragments.SignUpPage"
+        android:label="fragment_sign_up_page"
+        tools:layout="@layout/fragment_sign_up_page" >
+        <action
+            android:id="@+id/action_signUpPage_to_signUpDataInsert"
+            app:destination="@id/signUpDataInsert" />
+        <action
+            android:id="@+id/action_signUpPage_to_loginPage"
+            app:destination="@id/loginPage"
+            app:popUpTo="@id/loginPage"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpDataInsert"
+        android:name="com.example.travelplannerandcityguide.ui.fragments.SignUpDataInsert"
+        android:label="fragment_sign_up_data_insert"
+        tools:layout="@layout/fragment_sign_up_data_insert" />
+</navigation>

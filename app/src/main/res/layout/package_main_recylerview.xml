@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="12dp"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Puri - 7 nights"
+            android:fontFamily="@font/muli_black"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/translucentWhite"
+            android:tint="@color/black"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            android:id="@+id/back_btn_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:fontFamily="sans-serif-medium"
+        android:text="An important place of Hindu pilgrimage,Puri features a wealth of holy  and historic sites that draw in believers and tourists alike. Kids will enjoy puri  Beach and Konark Museum. Get"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="more"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif-medium"/>
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:backgroundTint="@color/translucentWhite"
+            android:tint="#ff696969"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="4dp"
+            android:layout_gravity="center_vertical"
+
+
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Highlights from your trip"
+        android:fontFamily="@font/muli_bold"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="18dp"
+
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/inner_package_recylerview"
+        tools:itemCount="6"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginBottom="16dp"
+
+        />
+
+
+</LinearLayout>

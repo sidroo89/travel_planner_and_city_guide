@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    android:layout_margin="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_marginBottom="8dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/featured_image"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/nandankana"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/curved_background"
+                android:gravity="center">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FROM"
+                    android:textSize="8sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/muli"
+                    android:gravity="center"
+
+
+
+                  android:padding="4dp"
+
+
+                  />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 249"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/muli_bold"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+
+
+
+
+
+                   />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NandanKanan Zoological Park"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/josefin_sans_bold_italic"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="8dp"
+            >
+            <RatingBar
+                android:id="@+id/featured_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="3.5"
+                android:numStars="5"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:progressTint="#DDD050"
+                android:secondaryProgressTint="#DDD050"
+                android:progressBackgroundTint="#FF4F4F4F"
+                android:isIndicator="true"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/restaurantRating"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_bold"
+                android:gravity="center"
+                android:text="3.9"
+                android:textColor="#FF4F4F4F"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="6dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration: 8 hours"
+            android:textSize="16sp"
+            android:fontFamily="@font/muli"
+            android:maxLines="2"
+            android:visibility="visible"
+            android:ellipsize="end"
+            android:textColor="#FF9C9C9C"
+
+           />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
